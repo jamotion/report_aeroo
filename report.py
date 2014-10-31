@@ -39,6 +39,6 @@ class Report(Model):
     def get_action(self, cr, uid, ids, report_name, data=None, context=None):
 
         replacing_report = self._get_replacing_report(cr, report_name)
-        action = super(Report, self).get_action(cr, uid, ids, replacing_report, data=data, context=context)
-        action['datas'] = action['data']
+        action = super(Report, self).get_action(cr, uid, ids, replacing_report, datas=data, context=context)
+        #action['datas'] = action['data']
         return action
