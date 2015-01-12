@@ -798,7 +798,7 @@ class Aeroo_report(report_sxw):
         if context is None:
             context = {}
         if 'tz' not in context:
-            context['tz'] = pool.get('res.users').browse(cr, uid, uid).context_tz
+            context['tz'] = pool.get('res.users').browse(cr, uid, uid).tz
 
         data.setdefault('model', context.get('active_model',False))
         ir_obj = pool.get('ir.actions.report.xml')
