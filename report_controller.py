@@ -20,6 +20,7 @@
 ##############################################################################
 from openerp.addons.report.controllers.main import ReportController
 from openerp.addons.web.http import route
+import simplejson
 
 class ReportController(ReportController):
 
